@@ -1,0 +1,46 @@
+.have-part-by {
+  height: 30px;
+  position: relative;
+  cursor: pointer;
+  .inner {
+    color: #526273;
+    border-top-color: #edf2f7 !important;
+    vertical-align: middle !important;
+    line-height: 1.42857143;
+    border-top: 1px solid #ddd;
+    position: absolute;
+  }
+  .inner h3 {
+    margin: 5px;
+    margin-left: 5px;
+    font-size: 16px;
+    font-family: "Fira Sans Condensed", sans-serif;
+    color: #696d73;
+    display: inline;
+    white-space: nowrap;
+    font-weight: 700;
+  }
+
+  i {
+    display: inline;
+    width: auto;
+    height: auto;
+    line-height: normal;
+    vertical-align: baseline;
+    background-image: none;
+    background-position: 0% 0%;
+    background-repeat: repeat;
+    margin-top: 0;
+    font-family: FontAwesome;
+    font-weight: normal;
+    font-style: normal;
+    text-decoration: inherit;
+  }
+  i.open::before {
+    content: "";
+  }
+
+  i::before {
+    content: "";
+  }
+}

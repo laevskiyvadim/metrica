@@ -1,0 +1,189 @@
+.settings {
+  position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+  a:hover {
+    color: rgba(0, 0, 0, 0.333);
+    background: rgba(226, 226, 226, 0.6);
+  }
+  .set-ul {
+    margin: 7.5px -15px;
+    float: right;
+    padding: 0;
+    position: relative;
+    .loading {
+      position: absolute;
+      left: -20px;
+      z-index: 50;
+      top: 5px;
+    }
+  }
+
+  a {
+    padding: 2px 8px;
+    height: 25px;
+  }
+  .username {
+    text-decoration: none;
+    position: relative;
+    display: block;
+    outline: 0px;
+    color: rgba(0, 0, 0, 0.333);
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: -0.5;
+    line-height: 1.8;
+    padding: 2px 8px;
+    height: 25px;
+    &:hover {
+      color: rgba(0, 0, 0, 0.333);
+      background: rgba(226, 226, 226, 0.6);
+    }
+  }
+  i {
+    color: #9ba3ad;
+    font-size: 15px;
+    display: inline;
+    vertical-align: baseline;
+    margin-top: 0;
+    font-style: normal;
+    font-family: FontAwesome;
+  }
+  i.exit:before {
+    content: "\f2f5";
+  }
+  .drop a {
+    color: #337ab7;
+    text-decoration: none;
+    background-color: transparent;
+  }
+  a {
+    text-decoration: none;
+  }
+  .drop b {
+    font-weight: bold;
+  }
+
+  li,
+  .drop {
+    position: relative;
+    display: block;
+    margin-top: 8px;
+  }
+  .toggle {
+    border: 1px solid #fff;
+    cursor: pointer;
+  }
+  li > a {
+    position: relative;
+    display: block;
+    line-height: 20px;
+    color: #9d9d9d;
+    border-left: 1px solid #101417;
+    color: rgb(214, 214, 214);
+    transition: background 0.1s linear;
+    padding: 2px 8px;
+    border-left: none;
+    height: 25px;
+    font-size: 15px;
+  }
+  li > a:hover {
+    color: rgba(0, 0, 0, 0.333);
+    background: rgba(226, 226, 226, 0.6);
+  }
+  :not(.open) > .toggle {
+    border: 1px solid #fff;
+    color: #9d9d9d;
+  }
+  .drop li > a:hover .caret {
+    border-top-color: #000;
+    border-bottom-color: #000;
+  }
+  li.drop i {
+    font-family: FontAwesome;
+    display: inline;
+    font-style: normal;
+  }
+  li.drop i:before {
+    content: "\f0ad";
+  }
+
+  .drop ul {
+    position: absolute;
+    top: 100%;
+    display: none;
+    float: left;
+    min-width: 160px;
+    padding: 5px 0;
+    font-size: 14px;
+    background-color: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 0 0 4px 4px;
+    z-index: 50;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.18);
+    margin: -1px 0 0;
+    right: 0;
+    left: auto;
+  }
+  .open ul {
+    display: block;
+  }
+
+  .menu li a {
+    padding: 3px 20px;
+    color: #333;
+    font-size: 13px;
+    outline: none;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: bold;
+    line-height: 1.8;
+  }
+  .menu li a:hover,
+  .menu li a:focus {
+    background: #3f5b73;
+    color: #fff;
+    text-decoration: none;
+  }
+
+  .open > a,
+  .open > a:hover,
+  .open > a:focus {
+    background-color: #fff;
+    color: #131212;
+    border-radius: 3px 3px 0 0;
+    border: 1px solid #c4c4c4;
+    border-bottom: 1px solid #fff;
+    z-index: 110;
+  }
+  .menu li {
+    margin: 0;
+    float: none;
+  }
+  .menu .divider {
+    height: 1px;
+    margin: 9px 0;
+    width: 100%;
+    background-color: #e5e5e5;
+  }
+  .menu .divider a:hover {
+    background: #fff;
+    color: #333;
+  }
+  @media (min-width: 768px) {
+    li {
+      float: left;
+    }
+  }
+}
+@media (min-width: 768px) {
+  .settings {
+    width: 33.33333333%;
+    float: left;
+    .set-ul {
+      margin: 0;
+    }
+  }
+}

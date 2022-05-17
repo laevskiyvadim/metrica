@@ -1,0 +1,119 @@
+.calendar-body {
+  thead {
+    border-bottom: 1px solid #dee3ea;
+  }
+  tbody {
+    display: block;
+    max-height: 70vh;
+    border-collapse: collapse;
+  }
+  th,
+  td {
+    border-collapse: collapse;
+    border: 1px solid #dee3ea;
+    padding: 0 4px;
+    vertical-align: middle;
+    text-align: center;
+    white-space: nowrap;
+    position: relative;
+  }
+  thead,
+  tbody tr {
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+    border-collapse: collapse;
+  }
+  thead tr {
+    height: 30px;
+  }
+  tbody tr {
+    margin-bottom: 0;
+    height: 20px;
+    border-collapse: collapse;
+  }
+  tbody.week-day {
+    overflow-y: auto;
+  }
+  tbody.week-day tr:nth-child(2n + 1) td,
+  tbody.week-day tr:nth-child(2n + 1) th {
+    border-bottom: none;
+  }
+  tbody.week-day tr td:first-child {
+    padding: 0 4px;
+    width: 50px;
+    vertical-align: middle;
+    text-align: right;
+    white-space: nowrap;
+    font-weight: normal;
+  }
+  tbody.week-day > tr > td.f {
+    padding: 0;
+  }
+
+  thead.week-day tr th:first-child,
+  thead.week-day tr td:first-child {
+    width: 50px;
+  }
+  thead.week-day tr th:last-child,
+  thead.week-day tr td:last-child {
+    width: 17px;
+  }
+  thead.week-day tr:nth-child(2) {
+    height: 40px;
+  }
+
+  .highlight {
+    background: #fcf8e3;
+  }
+  .item {
+    display: flex;
+    flex-direction: column;
+    min-height: 103px;
+  }
+  .event {
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid #3a87ad;
+    background-color: #3a87ad;
+    color: #fff;
+    font-size: 0.85em;
+    cursor: default;
+    border-left-width: 1px;
+    border-right-width: 1px;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    margin: 0 4px 2px 2px;
+    line-height: 1.5;
+  }
+  .f .event {
+    position: absolute;
+    width: 90%;
+    min-height: 50px;
+    z-index: 2;
+  }
+  .event span {
+    white-space: normal;
+    text-align: left;
+  }
+  .day-number {
+    float: right;
+    text-align: right;
+    padding: 2px;
+  }
+  .off {
+    opacity: 0.3;
+  }
+  strong {
+    padding-right: 3px;
+  }
+  .f td {
+    border-left: none;
+    border-right: none;
+  }
+  .t td {
+    border-top: none;
+  }
+}

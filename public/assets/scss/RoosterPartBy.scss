@@ -1,0 +1,30 @@
+.part-by-rooster {
+  cursor: pointer;
+  .inner {
+    padding-left: 10px;
+  }
+  .rooster-row {
+    i {
+      transform: rotate(90deg);
+    }
+  }
+  i.open::before {
+    content: "";
+  }
+  i::before {
+    content: "";
+  }
+  .badge {
+    i::before {
+      content: "";
+    }
+  }
+  h3 {
+    margin: 5px;
+    margin-left: 5px;
+    font-size: 16px;
+    font-family: "Fira Sans Condensed", sans-serif;
+    color: #696d73;
+    display: inline-block;
+  }
+}

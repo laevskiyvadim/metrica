@@ -1,0 +1,58 @@
+.header {
+  position: relative;
+  min-height: 30px;
+  .a {
+    position: absolute;
+    cursor: pointer;
+    z-index: 3;
+    color: #d2c5e1;
+    font-size: 16px;
+  }
+
+  .a:active,
+  .a:hover {
+    color: #23527c;
+  }
+  .i {
+    font-family: FontAwesome;
+    vertical-align: baseline;
+    font-style: normal;
+    background-position: 0% 0%;
+    margin-top: 0;
+    color: #abb1b7;
+  }
+  .i:hover {
+    color: #23527c;
+  }
+  .min .i:hover {
+    color: #abb1b7;
+  }
+  @media (min-width: 768px) {
+    .header {
+      border-radius: 4px;
+    }
+  }
+  @media only screen and (min-width: 768px) {
+    .a {
+      display: none;
+    }
+  }
+  @media only screen and (min-width: 1170px) {
+    .a {
+      display: inline-block;
+      left: 182px;
+    }
+    .a.min {
+      font-size: 20px;
+      left: 19px;
+      top: 5px;
+      color: #abb1b7;
+    }
+    .a .i:before {
+      content: "\f053";
+    }
+    .a.min .i:before {
+      content: "\f054";
+    }
+  }
+}

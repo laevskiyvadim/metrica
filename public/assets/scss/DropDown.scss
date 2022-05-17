@@ -1,0 +1,39 @@
+.ui-dropdown {
+  position: relative;
+  display: inline-block;
+  .dialog {
+    display: none;
+  }
+  .dialog.is-visible {
+    display: block;
+  }
+  .head {
+    border: 1px solid #dedede;
+    border-radius: 4px;
+    text-shadow: 1px 1px 1px #fff;
+    box-shadow: 1px 1px 4px 0px #efefef;
+    cursor: pointer;
+    color: #337ab7;
+    font-size: 13px;
+    padding: 1px 13px 5px 12px;
+    border: none;
+    background: none;
+    box-shadow: none;
+    display: flex;
+  }
+  .head:hover {
+    border: none;
+    background: none;
+    box-shadow: none;
+  }
+
+  .icon-filter:before {
+    content: "\f0b0";
+  }
+  .dialog {
+    position: absolute;
+    right: 0px;
+    top: 42px;
+    z-index: 100;
+  }
+}

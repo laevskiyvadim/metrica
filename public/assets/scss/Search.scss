@@ -1,0 +1,106 @@
+header:not(.min) input {
+  left: 200px;
+  width: calc(100% - 200px);
+}
+header:not(.min) input + .dialog {
+  top: -5px;
+  left: 200px;
+}
+.searchresult-keyword {
+  text-decoration: underline;
+  color: red;
+}
+.ul-search {
+  list-style: none;
+  position: relative;
+  min-height: 1px;
+  float: left;
+  padding: 0;
+  li {
+    position: relative;
+    display: block;
+    margin-top: 8px;
+    width: 100%;
+  }
+  input {
+    height: 27px;
+    padding: 3px 6px;
+    background: url("../../../assets/lens.png") #fff no-repeat 99%;
+    border: none;
+    border-bottom: 1px dashed #e2e2e2;
+    position: relative;
+    border-radius: 0;
+    top: -3px;
+    outline: 0;
+    color: #6b6969;
+    font-size: 13px;
+    margin-right: 40px;
+    z-index: 110;
+    width: 75%;
+    left: 260px;
+    width: calc(100% - 260px);
+  }
+  input:focus {
+    background-color: #fff;
+    border-bottom: 1px dashed #a0a0a0;
+  }
+  input + .dialog {
+    top: -5px;
+    left: 260px;
+    margin-right: -10px;
+  }
+  input + .dialog .body {
+    margin-left: -10px;
+    padding-top: 35px;
+    font-size: 12px;
+    border: none;
+    border-radius: 0;
+    border-bottom: 1px solid #a1a1a1;
+  }
+  .dialog {
+    display: none;
+    position: absolute;
+    right: 0px;
+    top: 42px;
+    z-index: 100;
+  }
+  .body {
+    background-color: #fff;
+    border: 1px solid #a1a1a1;
+    border-radius: 5px;
+    box-shadow: 0px 0px 9px 0px #d6d6d6;
+    padding: 8px 10px;
+  }
+  a {
+    color: #337ab7;
+    text-decoration: none;
+  }
+  a:hover,
+  a:focus {
+    outline: 0;
+    color: #23527c;
+    text-decoration: underline;
+  }
+  @media screen and (max-width: 1170px) {
+    input + .dialog .body {
+      margin-left: 50px;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .ul-search {
+    width: 66.66666667%;
+    float: left;
+    margin: 0;
+    li {
+      float: left;
+    }
+  }
+}
+@media (min-width: 992px) {
+  .ul-search {
+    float: left;
+    width: 66.66666667%;
+  }
+}

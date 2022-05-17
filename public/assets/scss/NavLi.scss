@@ -1,0 +1,110 @@
+li.has-children::marker {
+  unicode-bidi: isolate;
+  font-variant-numeric: tabular-nums;
+  text-transform: none;
+  text-indent: 0px;
+  text-align: start;
+  text-align-last: start;
+}
+nav .has-children a {
+  display: block;
+  position: relative;
+  color: #abb1b7;
+  text-decoration: none;
+}
+nav .has-children a::after {
+  font-family: "FontAwesome";
+  font-weight: normal;
+  font-style: normal;
+  display: none;
+  text-decoration: inherit;
+}
+@media only screen and (min-width: 1170px) {
+  nav li.has-children > a::after {
+    display: inline-block;
+  }
+}
+
+.min .has-children a {
+  font-size: 1.2rem;
+  text-align: center;
+}
+ul > li.has-children > a {
+  padding-left: calc(5%);
+  border-bottom: 1px solid #373d44;
+  font-size: 1.3em;
+}
+li.has-children > a::after {
+  position: absolute;
+  right: 5%;
+  top: 50%;
+  bottom: auto;
+  transition: 100ms ease-in-out;
+  transform: translateY(-50%);
+  content: "\f054";
+}
+.min li.has-children > a:after {
+  display: none;
+}
+nav.min > ul > li.has-children > a {
+  padding-left: 0;
+  padding-right: 0;
+  padding: 0;
+}
+nav.min > ul > li.has-children > a > p {
+  display: none;
+}
+@media only screen and (min-width: 1170px) {
+  nav > ul > li.has-children > a {
+    padding: 0.7em 1em 0.7em 20px;
+    text-align: left;
+    border-bottom: none;
+  }
+}
+nav ul > li.has-children > a > i {
+  font-size: 1.8rem;
+  display: none;
+  padding-right: calc(2%);
+}
+nav ul > li.has-children > a > i::before {
+  font-size: 1.5rem;
+}
+nav ul > li.has-children > a > p {
+  display: inline-block;
+  margin: 0;
+}
+nav ul > li.has-children > a > i {
+  display: inline-block;
+}
+@media only screen and (min-width: 1170px) {
+  nav > ul > li.has-children > a > p {
+    display: inline-block;
+  }
+}
+nav > ul > li.has-children.selected > a,
+nav > ul > li.has-children.active > a {
+  color: #ffffff;
+}
+nav li.has-children.selected > a::after {
+  transform: translateY(-50%) rotate(90deg);
+}
+nav > ul > li.has-children.active > a,
+nav > ul > li.has-children.active.selected > a {
+  box-shadow: inset 3px 0 0 #1784c7;
+  background-color: #33383e;
+}
+nav.min li.has-children {
+  position: relative;
+}
+nav.min li.has-children i {
+  line-height: 1.5;
+}
+nav.min > ul > li.has-children:hover,
+nav > ul > li.has-children.hover {
+  box-shadow: inset 3px 0 0 grey;
+}
+
+nav.min > ul > li.has-children:hover,
+nav > ul > li.has-children.hover {
+  box-shadow: inset 3px 0 0 grey;
+}

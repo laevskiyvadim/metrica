@@ -1,0 +1,113 @@
+.notification {
+  position: relative;
+  display: block;
+  a {
+    cursor: pointer;
+    position: relative;
+    display: block;
+    color: rgb(214, 214, 214);
+    transition: background 0.1s linear;
+    padding: 2px 8px;
+    font-size: 15px;
+    height: 25px;
+  }
+  a:hover {
+    color: rgba(0, 0, 0, 0.333);
+    background: rgba(226, 226, 226, 0.6);
+  }
+  :not(.open) > a {
+    border: 1px solid #fff;
+  }
+  span {
+    display: inline;
+    position: absolute;
+    padding: 0.2em 0.6em 0.3em;
+    color: #fff;
+    border-radius: 10rem;
+    top: -5px;
+    right: -10px;
+    font-size: 10px;
+    font-weight: bold;
+    z-index: 2;
+    background-color: #d9534f;
+    line-height: 1;
+  }
+  &.open > a,
+  &.open > a:hover,
+  &.open > a:focus {
+    color: #fff;
+    background-color: #fff;
+    color: #131212;
+    border-radius: 3px 3px 0 0;
+    border: 1px solid #c4c4c4;
+    border-bottom: 1px solid #fff;
+    z-index: 110;
+    margin: -1px 0 0 -1px;
+  }
+  i {
+    font-family: FontAwesome;
+    display: inline;
+    background-position: 0% 0%;
+  }
+  i:before {
+    display: inline-block;
+  }
+  .d-menu {
+    display: none;
+    position: absolute;
+    float: left;
+    min-width: 160px;
+    font-size: 14px;
+    text-align: left;
+    background-color: #fff;
+    right: 0;
+    left: auto;
+    z-index: 50;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.18);
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    margin: -1px 0 0;
+    padding: 10px 0;
+    li {
+      list-style: none;
+    }
+  }
+  &.open > .d-menu {
+    display: block;
+  }
+  .btn-info {
+    display: inline-block;
+    font-size: 12px;
+    line-height: 1.5;
+    cursor: pointer;
+    user-select: none;
+    border: 1px solid #46b8da;
+    border-radius: 3px;
+    color: #fff;
+    background-color: #5bc0de;
+    padding: 1px 5px;
+    margin: 0 0 0 10px;
+  }
+  .btn-default {
+    display: inline-block;
+    font-size: 12px;
+    line-height: 1.5;
+    cursor: pointer;
+    user-select: none;
+    border: 1px solid #ccc;
+    color: #333;
+    background-color: #fff;
+    padding: 5px 10px;
+    width: 100%;
+    border-radius: 1px;
+  }
+  .notifications {
+    width: 400px;
+    height: 400px;
+    padding: 0 10px;
+    margin-top: 10px;
+    overflow-y: auto;
+  }
+}

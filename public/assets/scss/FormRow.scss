@@ -1,0 +1,20 @@
+.td {
+  padding: 0;
+  vertical-align: top;
+}
+.td:first-child {
+  width: 10%;
+  padding-right: 25px;
+  font-size: 13px;
+  cursor: auto;
+  color: black;
+  text-transform: uppercase;
+}
+
+.tr > td:not(.top-name) {
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+.tr {
+  width: 100%;
+}

@@ -1,0 +1,10 @@
+.tabset {
+  position: relative;
+  padding: 0 15px;
+}
+@media (min-width: 992px) {
+  .tabset {
+    float: left;
+    width: 100%;
+  }
+}

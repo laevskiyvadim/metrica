@@ -1,0 +1,28 @@
+.grid {
+  table {
+    border-spacing: 0;
+    border-collapse: collapse;
+    background-color: transparent;
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 20px;
+    font-size: 13px;
+  }
+  @media screen and (max-width: 767px) {
+    table {
+      margin-bottom: 0;
+    }
+  }
+
+  .action-zone {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 0;
+    position: absolute;
+    display: flex;
+    top: 5px;
+    right: 17px;
+    z-index: 1;
+    float: right;
+  }
+}

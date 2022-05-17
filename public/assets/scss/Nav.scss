@@ -1,0 +1,56 @@
+.nav {
+  nav {
+    position: absolute;
+    z-index: 2;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    background-color: #2c3136;
+    overflow: hidden;
+    visibility: visible;
+    &.min {
+      width: 50px;
+      overflow: visible;
+      max-height: none;
+    }
+    div {
+      background: url("../../../assets/logo.png");
+      width: 200px;
+      height: 81px;
+    }
+    &.min div {
+      background: url("../../../assets/logo-mini.png");
+      margin-left: 50px;
+      height: 37px;
+    }
+    ul {
+      margin: 0;
+      padding-left: 0;
+    }
+    ul:last-of-type {
+      padding-bottom: 0;
+      border-bottom: none;
+    }
+    .min > ul {
+      padding: 0;
+    }
+  }
+}
+
+@media only screen and (min-width: 1170px) {
+  .nav {
+    width: 200px;
+    opacity: 1;
+    overflow: visible;
+    max-height: none;
+    ul {
+      padding: 0px;
+      border-bottom: 1px solid #373d44;
+    }
+  }
+}
+@media screen and (max-width: 767px) {
+  .nav {
+    display: none;
+  }
+}

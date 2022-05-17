@@ -1,0 +1,22 @@
+.main-row {
+  margin: 0 -15px;
+}
+.main-row:before,
+.main-row:after {
+  display: table;
+  content: " ";
+}
+.main-row:after {
+  clear: both;
+}
+
+.main-col {
+  position: relative;
+  padding: 0 15px;
+}
+@media (min-width: 992px) {
+  .main-col {
+    float: left;
+    width: 100%;
+  }
+}
